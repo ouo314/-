@@ -8,7 +8,7 @@ const tests = {
 2. 同時屈膝抬起兩隻腳\n
 3. 雙手抱住非測試腳穩定骨盆\n
 4. 將測試腳慢慢的往前往下延伸`,
-        image: "/photo/髂腰.png"
+        image: "photo/髂腰.png"
     },
     "背直肌/膕旁肌/腓腸肌柔軟度": {
         description: `採長坐姿：\n

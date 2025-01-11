@@ -5,7 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>肌肉柔軟度測試</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: rgb(115, 164, 231);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            margin-bottom: 60px;
+        }
+
+        .test-button {
+            background-color: rgb(115, 164, 231);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .test-button:hover {
+            background-color: rgb(115, 164, 231);
+        }
+
+        #test-list div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #test-details {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #test-description {
+            text-align: left;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+
+        footer {
+            background-color: rgb(117, 124, 134);
+            color: white;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,21 +85,21 @@
     <main>
         <section id="muscle-overview">
             <h2>人體肌群分佈</h2>
-            <img src="/photo/all.png" alt="人體肌群圖" id="muscle-image">
+            <img src="photo/all.png" alt="人體肌群圖" id="muscle-image">
         </section>
-        <section id="test-list">
-            <h2>選擇測試</h2>
-            <div>
-                <button class="test-button" data-test="髂腰肌/股直肌柔軟度">髂腰肌/股直肌柔軟度</button>
-                <button class="test-button" data-test="背直肌/膕旁肌/腓腸肌柔軟度">背直肌/膕旁肌/腓腸肌柔軟度</button>
-                <button class="test-button" data-test="膕旁肌柔軟度">膕旁肌柔軟度</button>
-                <button class="test-button" data-test="髂脛束柔軟度">髂脛束柔軟度</button>
-                <button class="test-button" data-test="胸大肌柔軟度">胸大肌柔軟度</button>
-                <button class="test-button" data-test="胸小肌柔軟度">胸小肌柔軟度</button>
-                <button class="test-button" data-test="大圓肌/背闊肌/菱形肌柔軟度">大圓肌/背闊肌/菱形肌柔軟度</button>
-                <button class="test-button" data-test="肩旋轉肌柔軟度">肩旋轉肌柔軟度</button>
-            </div>
-        </section>
+        <!--<section id="test-list">-->
+        <h2>選擇測試</h2>
+        <div>
+            <button class="test-button" data-test="髂腰肌/股直肌柔軟度">髂腰肌/股直肌柔軟度</button>
+            <button class="test-button" data-test="背直肌/膕旁肌/腓腸肌柔軟度">背直肌/膕旁肌/腓腸肌柔軟度</button>
+            <button class="test-button" data-test="膕旁肌柔軟度">膕旁肌柔軟度</button>
+            <button class="test-button" data-test="髂脛束柔軟度">髂脛束柔軟度</button>
+            <button class="test-button" data-test="胸大肌柔軟度">胸大肌柔軟度</button>
+            <button class="test-button" data-test="胸小肌柔軟度">胸小肌柔軟度</button>
+            <button class="test-button" data-test="大圓肌/背闊肌/菱形肌柔軟度">大圓肌/背闊肌/菱形肌柔軟度</button>
+            <button class="test-button" data-test="肩旋轉肌柔軟度">肩旋轉肌柔軟度</button>
+        </div>
+        <!--</section>-->
         <section id="test-details">
             <h2>測試詳情</h2>
             <img id="test-image" src="" alt="測試圖片">
@@ -38,7 +107,7 @@
         </section>
     </main>
     <footer>
-        <p>此網站僅作日常疼痛控制期末報告使用，網頁連結與資料皆不會對外公開，網站會於下學期初下架。</p>
+        <p>此網站僅作日常疼痛控制期末報告使用，版權為成功大學 陳文玲教授所有，網站會於課程結束後盡速下架。</p>
     </footer>
     <script src="script.js"></script>
 </body>
